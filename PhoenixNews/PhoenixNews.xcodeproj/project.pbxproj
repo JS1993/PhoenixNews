@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CF02B2541CDB843D00BD9D4B /* DetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF02B2531CDB843D00BD9D4B /* DetailTableViewController.m */; };
+		CF02B2571CDB984500BD9D4B /* TitleLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = CF02B2561CDB984500BD9D4B /* TitleLabel.m */; };
 		CF44E3AD1CDB7FCC009D2D9C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CF44E3AC1CDB7FCC009D2D9C /* main.m */; };
 		CF44E3B01CDB7FCC009D2D9C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF44E3AF1CDB7FCC009D2D9C /* AppDelegate.m */; };
 		CF44E3B31CDB7FCC009D2D9C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF44E3B21CDB7FCC009D2D9C /* ViewController.m */; };
@@ -38,6 +39,8 @@
 /* Begin PBXFileReference section */
 		CF02B2521CDB843D00BD9D4B /* DetailTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailTableViewController.h; sourceTree = "<group>"; };
 		CF02B2531CDB843D00BD9D4B /* DetailTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailTableViewController.m; sourceTree = "<group>"; };
+		CF02B2551CDB984500BD9D4B /* TitleLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TitleLabel.h; sourceTree = "<group>"; };
+		CF02B2561CDB984500BD9D4B /* TitleLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TitleLabel.m; sourceTree = "<group>"; };
 		CF44E3A81CDB7FCC009D2D9C /* PhoenixNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhoenixNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF44E3AC1CDB7FCC009D2D9C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CF44E3AE1CDB7FCC009D2D9C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -110,6 +113,8 @@
 				CF44E3B21CDB7FCC009D2D9C /* ViewController.m */,
 				CF02B2521CDB843D00BD9D4B /* DetailTableViewController.h */,
 				CF02B2531CDB843D00BD9D4B /* DetailTableViewController.m */,
+				CF02B2551CDB984500BD9D4B /* TitleLabel.h */,
+				CF02B2561CDB984500BD9D4B /* TitleLabel.m */,
 				CF44E3B41CDB7FCC009D2D9C /* Main.storyboard */,
 				CF44E3B71CDB7FCC009D2D9C /* Assets.xcassets */,
 				CF44E3B91CDB7FCC009D2D9C /* LaunchScreen.storyboard */,
@@ -281,6 +286,7 @@
 				CF02B2541CDB843D00BD9D4B /* DetailTableViewController.m in Sources */,
 				CF44E3B31CDB7FCC009D2D9C /* ViewController.m in Sources */,
 				CF44E3B01CDB7FCC009D2D9C /* AppDelegate.m in Sources */,
+				CF02B2571CDB984500BD9D4B /* TitleLabel.m in Sources */,
 				CF44E3AD1CDB7FCC009D2D9C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

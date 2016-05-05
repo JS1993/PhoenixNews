@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "DetailTableViewController.h"
+#import "TitleLabel.h"
 
 @interface ViewController ()<UIScrollViewDelegate>
 
@@ -20,7 +21,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
- 
+    
+    //关闭系统自己调整第一个scrollView的竖直偏移
     self.automaticallyAdjustsScrollViewInsets=NO;
     
     [self setUpChildViewController];
@@ -37,19 +39,13 @@
     
     for (NSInteger i=0; i<7; i++) {
        
-        UILabel* label=[[UILabel alloc]init];
-        
-        label.backgroundColor=[self gatRandomColor];
+        TitleLabel* label=[[TitleLabel alloc]init];
         
         label.text=[self.childViewControllers[i] title];
-        
-        label.userInteractionEnabled=YES;
         
         label.frame=CGRectMake(i*labelW, 0, labelW, self.titleSV.bounds.size.height);
         
         label.tag=i;
-        
-        label.textAlignment=NSTextAlignmentCenter;
         
         UITapGestureRecognizer* tap=[[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(tap:)];
         
@@ -57,9 +53,7 @@
         
         [self.titleSV addSubview:label];
         
-        if (i==self.childViewControllers.count-1) {
-            
-        }
+        if (i==0) label.scale=1.0;
         
         self.titleSV.contentSize=CGSizeMake(7*labelW,0);
         
@@ -80,15 +74,6 @@
     [self.contentSV setContentOffset:offset animated:YES];
 }
 
--(UIColor*)gatRandomColor{
-    
-    CGFloat r=arc4random_uniform(256)/255.0;
-    CGFloat g=arc4random_uniform(256)/255.0;
-    CGFloat b=arc4random_uniform(256)/255.0;
-    
-    return [UIColor colorWithRed:r green:g blue:b alpha:1];
-    
-}
 
 #pragma mark--创建子控制器
 -(void)setUpChildViewController{
@@ -134,7 +119,7 @@
     NSInteger index=offsetX/width;
     
     //取出需要居中显示的label
-    UILabel * label=self.titleSV.subviews[index];
+    TitleLabel * label=self.titleSV.subviews[index];
     CGPoint titleOffset=scrollView.contentOffset;
     titleOffset.x=label.center.x-width*0.5;
     //左边超出处理
@@ -145,6 +130,10 @@
     
     //设置标题视图的偏移量
     [self.titleSV setContentOffset:titleOffset animated:YES];
+    //让其他label回到最初状态
+    for (TitleLabel* otherLabel in self.titleSV.subviews) {
+        if (otherLabel!=label) otherLabel.scale=0.0;
+    }
     
     //取出需要显示的子控制器
     DetailTableViewController* vc=self.childViewControllers[index];
@@ -163,6 +152,26 @@
 }
 
 -(void)scrollViewDidScroll:(UIScrollView *)scrollView{
+    
+    //算出放大或缩小量
+    CGFloat scale=scrollView.contentOffset.x/scrollView.frame.size.width;
+    //当偏移量超出左右边界，直接返回
+    if (scale<0||scale>self.titleSV.subviews.count-1) return;
+    //取出需要操作的左边label
+    NSInteger leftIndex=scale;
+    TitleLabel* leftLabel=self.titleSV.subviews[leftIndex];
+    //取出需要操作的右边label
+    NSInteger rightIndex=leftIndex+1;
+    TitleLabel* rightLabel=(rightIndex==self.titleSV.subviews.count)?nil:self.titleSV.subviews[rightIndex];
+    
+    //右边比例
+    CGFloat rightScale=scale-leftIndex;
+    //左边比例
+    CGFloat leftScale=1-rightScale;
+    
+    //设置label的比例
+    rightLabel.scale=rightScale;
+    leftLabel.scale=leftScale;
     
 }
 @end
