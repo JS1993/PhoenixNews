@@ -1,0 +1,522 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CF44E3AD1CDB7FCC009D2D9C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CF44E3AC1CDB7FCC009D2D9C /* main.m */; };
+		CF44E3B01CDB7FCC009D2D9C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF44E3AF1CDB7FCC009D2D9C /* AppDelegate.m */; };
+		CF44E3B31CDB7FCC009D2D9C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF44E3B21CDB7FCC009D2D9C /* ViewController.m */; };
+		CF44E3B61CDB7FCC009D2D9C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF44E3B41CDB7FCC009D2D9C /* Main.storyboard */; };
+		CF44E3B81CDB7FCC009D2D9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF44E3B71CDB7FCC009D2D9C /* Assets.xcassets */; };
+		CF44E3BB1CDB7FCC009D2D9C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF44E3B91CDB7FCC009D2D9C /* LaunchScreen.storyboard */; };
+		CF44E3C61CDB7FCC009D2D9C /* PhoenixNewsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF44E3C51CDB7FCC009D2D9C /* PhoenixNewsTests.m */; };
+		CF44E3D11CDB7FCC009D2D9C /* PhoenixNewsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF44E3D01CDB7FCC009D2D9C /* PhoenixNewsUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CF44E3C21CDB7FCC009D2D9C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF44E3A01CDB7FCC009D2D9C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF44E3A71CDB7FCC009D2D9C;
+			remoteInfo = PhoenixNews;
+		};
+		CF44E3CD1CDB7FCC009D2D9C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF44E3A01CDB7FCC009D2D9C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF44E3A71CDB7FCC009D2D9C;
+			remoteInfo = PhoenixNews;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CF44E3A81CDB7FCC009D2D9C /* PhoenixNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhoenixNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF44E3AC1CDB7FCC009D2D9C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CF44E3AE1CDB7FCC009D2D9C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CF44E3AF1CDB7FCC009D2D9C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CF44E3B11CDB7FCC009D2D9C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CF44E3B21CDB7FCC009D2D9C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CF44E3B51CDB7FCC009D2D9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CF44E3B71CDB7FCC009D2D9C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CF44E3BA1CDB7FCC009D2D9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CF44E3BC1CDB7FCC009D2D9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF44E3C11CDB7FCC009D2D9C /* PhoenixNewsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhoenixNewsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF44E3C51CDB7FCC009D2D9C /* PhoenixNewsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhoenixNewsTests.m; sourceTree = "<group>"; };
+		CF44E3C71CDB7FCC009D2D9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF44E3CC1CDB7FCC009D2D9C /* PhoenixNewsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhoenixNewsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF44E3D01CDB7FCC009D2D9C /* PhoenixNewsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhoenixNewsUITests.m; sourceTree = "<group>"; };
+		CF44E3D21CDB7FCC009D2D9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CF44E3A51CDB7FCC009D2D9C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF44E3BE1CDB7FCC009D2D9C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF44E3C91CDB7FCC009D2D9C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CF44E39F1CDB7FCC009D2D9C = {
+			isa = PBXGroup;
+			children = (
+				CF44E3AA1CDB7FCC009D2D9C /* PhoenixNews */,
+				CF44E3C41CDB7FCC009D2D9C /* PhoenixNewsTests */,
+				CF44E3CF1CDB7FCC009D2D9C /* PhoenixNewsUITests */,
+				CF44E3A91CDB7FCC009D2D9C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CF44E3A91CDB7FCC009D2D9C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CF44E3A81CDB7FCC009D2D9C /* PhoenixNews.app */,
+				CF44E3C11CDB7FCC009D2D9C /* PhoenixNewsTests.xctest */,
+				CF44E3CC1CDB7FCC009D2D9C /* PhoenixNewsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF44E3AA1CDB7FCC009D2D9C /* PhoenixNews */ = {
+			isa = PBXGroup;
+			children = (
+				CF44E3AE1CDB7FCC009D2D9C /* AppDelegate.h */,
+				CF44E3AF1CDB7FCC009D2D9C /* AppDelegate.m */,
+				CF44E3B11CDB7FCC009D2D9C /* ViewController.h */,
+				CF44E3B21CDB7FCC009D2D9C /* ViewController.m */,
+				CF44E3B41CDB7FCC009D2D9C /* Main.storyboard */,
+				CF44E3B71CDB7FCC009D2D9C /* Assets.xcassets */,
+				CF44E3B91CDB7FCC009D2D9C /* LaunchScreen.storyboard */,
+				CF44E3BC1CDB7FCC009D2D9C /* Info.plist */,
+				CF44E3AB1CDB7FCC009D2D9C /* Supporting Files */,
+			);
+			path = PhoenixNews;
+			sourceTree = "<group>";
+		};
+		CF44E3AB1CDB7FCC009D2D9C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CF44E3AC1CDB7FCC009D2D9C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CF44E3C41CDB7FCC009D2D9C /* PhoenixNewsTests */ = {
+			isa = PBXGroup;
+			children = (
+				CF44E3C51CDB7FCC009D2D9C /* PhoenixNewsTests.m */,
+				CF44E3C71CDB7FCC009D2D9C /* Info.plist */,
+			);
+			path = PhoenixNewsTests;
+			sourceTree = "<group>";
+		};
+		CF44E3CF1CDB7FCC009D2D9C /* PhoenixNewsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CF44E3D01CDB7FCC009D2D9C /* PhoenixNewsUITests.m */,
+				CF44E3D21CDB7FCC009D2D9C /* Info.plist */,
+			);
+			path = PhoenixNewsUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CF44E3A71CDB7FCC009D2D9C /* PhoenixNews */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF44E3D51CDB7FCC009D2D9C /* Build configuration list for PBXNativeTarget "PhoenixNews" */;
+			buildPhases = (
+				CF44E3A41CDB7FCC009D2D9C /* Sources */,
+				CF44E3A51CDB7FCC009D2D9C /* Frameworks */,
+				CF44E3A61CDB7FCC009D2D9C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PhoenixNews;
+			productName = PhoenixNews;
+			productReference = CF44E3A81CDB7FCC009D2D9C /* PhoenixNews.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CF44E3C01CDB7FCC009D2D9C /* PhoenixNewsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF44E3D81CDB7FCC009D2D9C /* Build configuration list for PBXNativeTarget "PhoenixNewsTests" */;
+			buildPhases = (
+				CF44E3BD1CDB7FCC009D2D9C /* Sources */,
+				CF44E3BE1CDB7FCC009D2D9C /* Frameworks */,
+				CF44E3BF1CDB7FCC009D2D9C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CF44E3C31CDB7FCC009D2D9C /* PBXTargetDependency */,
+			);
+			name = PhoenixNewsTests;
+			productName = PhoenixNewsTests;
+			productReference = CF44E3C11CDB7FCC009D2D9C /* PhoenixNewsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CF44E3CB1CDB7FCC009D2D9C /* PhoenixNewsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF44E3DB1CDB7FCC009D2D9C /* Build configuration list for PBXNativeTarget "PhoenixNewsUITests" */;
+			buildPhases = (
+				CF44E3C81CDB7FCC009D2D9C /* Sources */,
+				CF44E3C91CDB7FCC009D2D9C /* Frameworks */,
+				CF44E3CA1CDB7FCC009D2D9C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CF44E3CE1CDB7FCC009D2D9C /* PBXTargetDependency */,
+			);
+			name = PhoenixNewsUITests;
+			productName = PhoenixNewsUITests;
+			productReference = CF44E3CC1CDB7FCC009D2D9C /* PhoenixNewsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CF44E3A01CDB7FCC009D2D9C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = jiangsu;
+				TargetAttributes = {
+					CF44E3A71CDB7FCC009D2D9C = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 4SU7V64Q9J;
+					};
+					CF44E3C01CDB7FCC009D2D9C = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 4SU7V64Q9J;
+						TestTargetID = CF44E3A71CDB7FCC009D2D9C;
+					};
+					CF44E3CB1CDB7FCC009D2D9C = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 4SU7V64Q9J;
+						TestTargetID = CF44E3A71CDB7FCC009D2D9C;
+					};
+				};
+			};
+			buildConfigurationList = CF44E3A31CDB7FCC009D2D9C /* Build configuration list for PBXProject "PhoenixNews" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF44E39F1CDB7FCC009D2D9C;
+			productRefGroup = CF44E3A91CDB7FCC009D2D9C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CF44E3A71CDB7FCC009D2D9C /* PhoenixNews */,
+				CF44E3C01CDB7FCC009D2D9C /* PhoenixNewsTests */,
+				CF44E3CB1CDB7FCC009D2D9C /* PhoenixNewsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CF44E3A61CDB7FCC009D2D9C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF44E3BB1CDB7FCC009D2D9C /* LaunchScreen.storyboard in Resources */,
+				CF44E3B81CDB7FCC009D2D9C /* Assets.xcassets in Resources */,
+				CF44E3B61CDB7FCC009D2D9C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF44E3BF1CDB7FCC009D2D9C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF44E3CA1CDB7FCC009D2D9C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CF44E3A41CDB7FCC009D2D9C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF44E3B31CDB7FCC009D2D9C /* ViewController.m in Sources */,
+				CF44E3B01CDB7FCC009D2D9C /* AppDelegate.m in Sources */,
+				CF44E3AD1CDB7FCC009D2D9C /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF44E3BD1CDB7FCC009D2D9C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF44E3C61CDB7FCC009D2D9C /* PhoenixNewsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF44E3C81CDB7FCC009D2D9C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF44E3D11CDB7FCC009D2D9C /* PhoenixNewsUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CF44E3C31CDB7FCC009D2D9C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF44E3A71CDB7FCC009D2D9C /* PhoenixNews */;
+			targetProxy = CF44E3C21CDB7FCC009D2D9C /* PBXContainerItemProxy */;
+		};
+		CF44E3CE1CDB7FCC009D2D9C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF44E3A71CDB7FCC009D2D9C /* PhoenixNews */;
+			targetProxy = CF44E3CD1CDB7FCC009D2D9C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CF44E3B41CDB7FCC009D2D9C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF44E3B51CDB7FCC009D2D9C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CF44E3B91CDB7FCC009D2D9C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF44E3BA1CDB7FCC009D2D9C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CF44E3D31CDB7FCC009D2D9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CF44E3D41CDB7FCC009D2D9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CF44E3D61CDB7FCC009D2D9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PhoenixNews/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jiangsu.PhoenixNews;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CF44E3D71CDB7FCC009D2D9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PhoenixNews/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jiangsu.PhoenixNews;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CF44E3D91CDB7FCC009D2D9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PhoenixNewsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jiangsu.PhoenixNewsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PhoenixNews.app/PhoenixNews";
+			};
+			name = Debug;
+		};
+		CF44E3DA1CDB7FCC009D2D9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PhoenixNewsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jiangsu.PhoenixNewsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PhoenixNews.app/PhoenixNews";
+			};
+			name = Release;
+		};
+		CF44E3DC1CDB7FCC009D2D9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = PhoenixNewsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jiangsu.PhoenixNewsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = PhoenixNews;
+			};
+			name = Debug;
+		};
+		CF44E3DD1CDB7FCC009D2D9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = PhoenixNewsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jiangsu.PhoenixNewsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = PhoenixNews;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CF44E3A31CDB7FCC009D2D9C /* Build configuration list for PBXProject "PhoenixNews" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF44E3D31CDB7FCC009D2D9C /* Debug */,
+				CF44E3D41CDB7FCC009D2D9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF44E3D51CDB7FCC009D2D9C /* Build configuration list for PBXNativeTarget "PhoenixNews" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF44E3D61CDB7FCC009D2D9C /* Debug */,
+				CF44E3D71CDB7FCC009D2D9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CF44E3D81CDB7FCC009D2D9C /* Build configuration list for PBXNativeTarget "PhoenixNewsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF44E3D91CDB7FCC009D2D9C /* Debug */,
+				CF44E3DA1CDB7FCC009D2D9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CF44E3DB1CDB7FCC009D2D9C /* Build configuration list for PBXNativeTarget "PhoenixNewsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF44E3DC1CDB7FCC009D2D9C /* Debug */,
+				CF44E3DD1CDB7FCC009D2D9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CF44E3A01CDB7FCC009D2D9C /* Project object */;
+}
