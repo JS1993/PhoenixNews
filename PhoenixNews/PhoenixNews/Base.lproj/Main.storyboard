@@ -10,8 +10,8 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="4PZ-cE-fRu"/>
+                        <viewControllerLayoutGuide type="bottom" id="rUE-Xn-vql"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -20,9 +20,6 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ybv-UI-oii">
                                 <rect key="frame" x="0.0" y="64" width="320" height="46"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="46" id="eAr-cp-tBY"/>
-                                </constraints>
                             </scrollView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VQA-rl-Snv">
                                 <rect key="frame" x="0.0" y="110" width="320" height="458"/>
@@ -34,20 +31,15 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="VQA-rl-Snv" firstAttribute="top" secondItem="Ybv-UI-oii" secondAttribute="bottom" constant="1" id="2VY-u7-5gE"/>
-                            <constraint firstItem="Ybv-UI-oii" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="6dt-SI-b4i"/>
-                            <constraint firstItem="VQA-rl-Snv" firstAttribute="top" secondItem="Ybv-UI-oii" secondAttribute="bottom" id="MiK-fv-q5p"/>
-                            <constraint firstItem="Ybv-UI-oii" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="baK-F5-CrX"/>
-                            <constraint firstAttribute="trailing" secondItem="VQA-rl-Snv" secondAttribute="trailing" id="lpT-21-oaN"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="VQA-rl-Snv" secondAttribute="bottom" id="o2t-HL-nBK"/>
-                            <constraint firstItem="VQA-rl-Snv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="utF-oK-h0y"/>
-                            <constraint firstAttribute="trailing" secondItem="Ybv-UI-oii" secondAttribute="trailing" id="vkd-7i-bVq"/>
+                            <constraint firstAttribute="trailing" secondItem="Ybv-UI-oii" secondAttribute="trailing" id="34q-SC-s4U"/>
+                            <constraint firstItem="Ybv-UI-oii" firstAttribute="leading" secondItem="VQA-rl-Snv" secondAttribute="leading" id="6VZ-4l-9iQ"/>
+                            <constraint firstItem="Ybv-UI-oii" firstAttribute="top" secondItem="4PZ-cE-fRu" secondAttribute="bottom" id="71K-P7-mTe"/>
+                            <constraint firstItem="VQA-rl-Snv" firstAttribute="top" secondItem="Ybv-UI-oii" secondAttribute="bottom" id="Jxo-bF-VJo"/>
+                            <constraint firstItem="Ybv-UI-oii" firstAttribute="trailing" secondItem="VQA-rl-Snv" secondAttribute="trailing" id="ZYK-DY-iPz"/>
+                            <constraint firstItem="VQA-rl-Snv" firstAttribute="bottom" secondItem="rUE-Xn-vql" secondAttribute="top" id="cf1-7N-qBu"/>
+                            <constraint firstItem="VQA-rl-Snv" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="110" id="uYN-Ko-rI8"/>
+                            <constraint firstItem="Ybv-UI-oii" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="zTi-Gx-FhC"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="2VY-u7-5gE"/>
-                            </mask>
-                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="新闻首页" id="uxR-Dn-vzf"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
@@ -58,7 +50,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1869" y="309"/>
+            <point key="canvasLocation" x="1869" y="308.99999999999994"/>
         </scene>
         <!--Item-->
         <scene sceneID="4XB-ZK-Vma">
@@ -77,7 +69,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kq1-3S-bfE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1057" y="309"/>
+            <point key="canvasLocation" x="1057" y="308.99999999999994"/>
         </scene>
     </scenes>
 </document>

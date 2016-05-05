@@ -21,6 +21,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
  
+    self.automaticallyAdjustsScrollViewInsets=NO;
+    
     [self setUpChildViewController];
     
     [self setUpTitleLabel];
@@ -43,7 +45,7 @@
         
         label.userInteractionEnabled=YES;
         
-        label.frame=CGRectMake(i*labelW, -64, labelW, self.titleSV.bounds.size.height);
+        label.frame=CGRectMake(i*labelW, 0, labelW, self.titleSV.bounds.size.height);
         
         label.tag=i;
         
@@ -59,7 +61,7 @@
             
         }
         
-        self.titleSV.contentSize=CGSizeMake(7*labelW,self.titleSV.bounds.size.height-64);
+        self.titleSV.contentSize=CGSizeMake(7*labelW,0);
         
         self.contentSV.contentSize=CGSizeMake(7*[UIScreen mainScreen].bounds.size.width, 0);
     }
