@@ -24,6 +24,8 @@
     [self setUpChildViewController];
     
     [self setUpTitleLabel];
+    
+    [self scrollViewDidEndScrollingAnimation:self.contentSV];
 }
 
 #pragma mark--添加顶部标题
@@ -31,13 +33,17 @@
     
     CGFloat labelW=100;
     
-    for (NSInteger i=0; i<self.childViewControllers.count; i++) {
+    for (NSInteger i=0; i<7; i++) {
        
-        UILabel* label=[[UILabel alloc]initWithFrame:CGRectMake(i*labelW, -64, labelW, self.titleSV.bounds.size.height)];
+        UILabel* label=[[UILabel alloc]init];
         
         label.backgroundColor=[self gatRandomColor];
         
         label.text=[self.childViewControllers[i] title];
+        
+        label.userInteractionEnabled=YES;
+        
+        label.frame=CGRectMake(i*labelW, -64, labelW, self.titleSV.bounds.size.height);
         
         label.tag=i;
         
@@ -123,12 +129,17 @@
     CGFloat offsetX=scrollView.contentOffset.x;
     
     //当前位置需要显示的控制器的索引
-    NSInteger index=width/offsetX;
+    NSInteger index=offsetX/width;
     
     //取出需要居中显示的label
     UILabel * label=self.titleSV.subviews[index];
     CGPoint titleOffset=scrollView.contentOffset;
     titleOffset.x=label.center.x-width*0.5;
+    //左边超出处理
+    if (titleOffset.x<0) titleOffset.x=0;
+    //右边超出处理
+    CGFloat maxOffsetX=self.titleSV.contentSize.width-width;
+    if (titleOffset.x>maxOffsetX) titleOffset.x=maxOffsetX;
     
     //设置标题视图的偏移量
     [self.titleSV setContentOffset:titleOffset animated:YES];
@@ -136,12 +147,16 @@
     //取出需要显示的子控制器
     DetailTableViewController* vc=self.childViewControllers[index];
     
-    vc.view.frame=CGRectMake(0, 0, width, height);
+    if ([vc isViewLoaded]) return;
+    
+    vc.view.frame=CGRectMake(offsetX, 0, width, height);
     
     [self.contentSV addSubview:vc.view];
 }
 
 -(void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView{
+    
+    [self scrollViewDidEndScrollingAnimation:scrollView];
     
 }
 
