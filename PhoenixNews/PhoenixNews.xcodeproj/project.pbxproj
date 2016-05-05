@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CF02B2541CDB843D00BD9D4B /* DetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF02B2531CDB843D00BD9D4B /* DetailTableViewController.m */; };
 		CF44E3AD1CDB7FCC009D2D9C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CF44E3AC1CDB7FCC009D2D9C /* main.m */; };
 		CF44E3B01CDB7FCC009D2D9C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF44E3AF1CDB7FCC009D2D9C /* AppDelegate.m */; };
 		CF44E3B31CDB7FCC009D2D9C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF44E3B21CDB7FCC009D2D9C /* ViewController.m */; };
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CF02B2521CDB843D00BD9D4B /* DetailTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailTableViewController.h; sourceTree = "<group>"; };
+		CF02B2531CDB843D00BD9D4B /* DetailTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailTableViewController.m; sourceTree = "<group>"; };
 		CF44E3A81CDB7FCC009D2D9C /* PhoenixNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhoenixNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF44E3AC1CDB7FCC009D2D9C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CF44E3AE1CDB7FCC009D2D9C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -105,6 +108,8 @@
 				CF44E3AF1CDB7FCC009D2D9C /* AppDelegate.m */,
 				CF44E3B11CDB7FCC009D2D9C /* ViewController.h */,
 				CF44E3B21CDB7FCC009D2D9C /* ViewController.m */,
+				CF02B2521CDB843D00BD9D4B /* DetailTableViewController.h */,
+				CF02B2531CDB843D00BD9D4B /* DetailTableViewController.m */,
 				CF44E3B41CDB7FCC009D2D9C /* Main.storyboard */,
 				CF44E3B71CDB7FCC009D2D9C /* Assets.xcassets */,
 				CF44E3B91CDB7FCC009D2D9C /* LaunchScreen.storyboard */,
@@ -273,6 +278,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF02B2541CDB843D00BD9D4B /* DetailTableViewController.m in Sources */,
 				CF44E3B31CDB7FCC009D2D9C /* ViewController.m in Sources */,
 				CF44E3B01CDB7FCC009D2D9C /* AppDelegate.m in Sources */,
 				CF44E3AD1CDB7FCC009D2D9C /* main.m in Sources */,
@@ -499,6 +505,7 @@
 				CF44E3D71CDB7FCC009D2D9C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CF44E3D81CDB7FCC009D2D9C /* Build configuration list for PBXNativeTarget "PhoenixNewsTests" */ = {
 			isa = XCConfigurationList;
@@ -507,6 +514,7 @@
 				CF44E3DA1CDB7FCC009D2D9C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CF44E3DB1CDB7FCC009D2D9C /* Build configuration list for PBXNativeTarget "PhoenixNewsUITests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +523,7 @@
 				CF44E3DD1CDB7FCC009D2D9C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
